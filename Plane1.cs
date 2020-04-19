@@ -5,19 +5,6 @@ using UnityEngine.SceneManagement;
 
 public class Plane1 : MonoBehaviour
 {
-    /*public float speed = 80f;
-    public float maxY = 2.5f;
-    public float minY = -2.5f;
-    private Vector2 targetPos;
-    private float ScreenWidth;
-    public Animator animator;
-    private Rigidbody2D rb;
-    void Start()
-    {
-        ScreenWidth = Screen.width;
-        rb = GetComponent<Rigidbody2D>();
-        targetPos = new Vector2(-6.0f, 0.0f);
-    }*/
     public AudioSource source;
     public SpriteRenderer spriteRenderer;
     public Sprite Plane_1;
@@ -107,25 +94,3 @@ public class Plane1 : MonoBehaviour
         source.Play();
     }
 }
-/*
-        float tempY = rb.velocity.y;
-        animator.SetFloat("SpeedD", Mathf.Abs(tempY));
-        transform.position = Vector2.MoveTowards(transform.position, targetPos, speed * Time.deltaTime);
-
-        if(transform.position == targetPos){
-            i = 0;
-        }
-
-        if(i == 1){
-            move right
-            if(transform.position.y < maxY){
-                targetPos = new Vector2(transform.position.x, transform.position.y);
-            }
-        }
-        if(i == 2){
-            move left
-            if(transform.position.y > minY){
-                targetPos = new Vector2(transform.position.x, transform.position.y);
-            }
-        }
-    }*/
